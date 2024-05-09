@@ -165,7 +165,7 @@
       const owner_name = document.getElementById('owner_name').value;
       const owner_email = document.getElementById('owner_email').value;
       const dog_name = document.getElementById('dog_name').value;
-      fetch("https://wagglyregister.azurewebsites.net/api/register_dog", {
+      fetch("https://wagglyregister.azurewebsites.net/api/register_dog?", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -190,7 +190,7 @@
       const walker_name = document.getElementById('walker_name').value;
       const walker_email = document.getElementById('walker_email').value;
       const walker_postcode = document.getElementById('walker_postcode').value;
-      fetch("https://wagglyregister.azurewebsites.net/api/register_walker", {
+      fetch("https://wagglyregister.azurewebsites.net/api/register_walker?", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
